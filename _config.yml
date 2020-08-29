@@ -1,0 +1,39 @@
+---
+title: epergaboni
+timezone: UTC
+collections:
+  kumusta:
+    title: Kumusta
+    output: true
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+  values:
+    layout: post
+- scope:
+    path: _posts
+  values:
+    layout: post
+    permalink: "/posts/:categories/:year/:month/:day/:title/"
+markdown: kramdown
+url: ''
+baseurl: "/"
+author:
+  name: Eper Gaboni
+  email: hi@epergaboni.com
+  image: "/assets/img/me.jpg"
+  bio: Hi, I’m <b>Eper Gaboni</b>, Philippine based SEO Specialist, Web Designer,
+    &amp; Web Developer. Focused on crafting beautiful &amp; user-friendly experiences.
+    I’ve built roughly 768 user interfaces around the globe. <br/>Say <a href="mailto:hi@epergaboni.com">hi@epergaboni.com</a>
+  github: eperg
+plugins:
+- jemoji
+- jekyll-seo-tag
+- jekyll-sitemap
+- jekyll-feed
